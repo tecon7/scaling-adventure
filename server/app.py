@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from flask import Flask, make_response
+from flask import Flask, make_response, jsonify
 from flask_migrate import Migrate
 
 from models import db, Vendor
@@ -37,7 +37,7 @@ def sweet_by_id(id):
 def vendor_sweets():
     return ''
 
-@app.route('vendor_sweets/<int:id>')
+@app.route('/vendor_sweets/<int:id>')
 def vendor_sweet_by_id(id):
     return ''
 
