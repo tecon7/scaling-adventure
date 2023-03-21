@@ -17,6 +17,30 @@ db.init_app(app)
 def home():
     return ''
 
+@app.route('/vendors')
+def vendors():
+    return ''
+
+@app.route('/vendors/<int:id>')
+def vendor_by_id(id):
+    return ''
+
+@app.route('/sweets')
+def sweets():
+    return ''
+
+@app.route('/sweets/<int:id>')
+def sweet_by_id(id):
+    return ''
+
+@app.route('/vendor_sweets')
+def vendor_sweets():
+    return ''
+
+@app.route('vendor_sweets/<int:id>')
+def vendor_sweet_by_id(id):
+    return ''
+
 
 if __name__ == '__main__':
     app.run(port=5555)
